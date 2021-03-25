@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/actionbar_home" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:paddingEnd="@dimen/d_16"
+        android:paddingStart="@dimen/d_16"
+        android:layout_marginEnd="@dimen/d_16"
+       android:layout_width="wrap_content"
+       android:text="@string/login"
+       android:fontFamily="sans-serif-thin"
+       android:textColor="@color/colorRed"
+       android:layout_marginTop="@dimen/d_50"
+       android:textSize="@dimen/d_60"
+       android:layout_height="wrap_content"/>
+
+    <EditText
+
+        android:paddingStart="@dimen/d_16"
+        android:layout_marginStart="@dimen/d_16"
+        android:layout_marginEnd="@dimen/d_16"
+        android:layout_width="match_parent"
+        android:hint="Phone"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:background="@color/colorGray"
+        android:layout_marginTop="@dimen/d_20"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:paddingStart="@dimen/d_16"
+        android:layout_marginStart="@dimen/d_16"
+        android:layout_marginEnd="@dimen/d_16"
+        android:layout_width="match_parent"
+        android:hint="PassWord"
+        android:textSize="24dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/d_10"
+        android:background="@color/colorGray"
+        android:layout_marginTop="@dimen/d_20"
+        android:layout_height="wrap_content"/>
+    <Button
+
+        android:layout_marginEnd="@dimen/d_16"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/d_10"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:paddingEnd="@dimen/d_20"
+        android:layout_marginStart="@dimen/d_10"
+        android:paddingStart="@dimen/d_20"
+        android:text="@string/login"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_20"
+            android:layout_marginTop="@dimen/d_10"
+            android:fontFamily="sans-serif-light"
+            android:padding="@dimen/d_10"
+            android:text="Don't have account ?"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/d_20" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_20"
+                android:layout_marginTop="@dimen/d_10"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:textSize="@dimen/d_20"
+                android:layout_marginEnd="@dimen/d_10"
+                android:paddingStart="@dimen/d_10"
+                android:paddingEnd="@dimen/d_10"
+                android:padding="@dimen/d_10"
+                android:text="Create one?"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/design_default_color_background" />
+        </LinearLayout>
+    </TableRow>
+</LinearLayout>

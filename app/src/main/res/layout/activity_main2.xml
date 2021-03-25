@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/actionbar_styleofme"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/d_20"
+            android:src="@drawable/ic_myprofile" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_16"
+            android:layout_marginStart="@dimen/d_10"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:padding="@dimen/d_10"
+            android:text="Profile Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/d_20" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_50"
+                android:text="125"
+                android:textColor="@color/black"
+                android:textSize="@dimen/d_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_20"
+                android:text="150 Friends" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/d_50"
+                android:layout_marginStart="@dimen/d_10"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_20"
+                android:text="250"
+                android:textColor="@color/black"
+                android:textSize="@dimen/d_20" />
+            <TextView
+                android:layout_marginStart="@dimen/d_10"
+                android:text="250 Follows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ScrollView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/d_20"
+            android:layout_marginTop="@dimen/d_20">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/teal_200"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/d_50">
+                    <TextView
+                        android:padding="@dimen/d_10"
+                        android:textSize="@dimen/d_20"
+                        android:text=" email: mail@gmail.com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/teal_200"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/d_50">
+                    <TextView
+                        android:padding="@dimen/d_10"
+                        android:textSize="@dimen/d_20"
+                        android:text=" phone:+84 7437265289"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/teal_200"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/d_50">
+                    <TextView
+                        android:padding="@dimen/d_10"
+                        android:textSize="@dimen/d_20"
+                        android:text=" skype: me007"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/teal_200"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/d_50">
+                    <TextView
+                        android:padding="@dimen/d_10"
+                        android:textSize="@dimen/d_20"
+                        android:text=" web: cssauthor.com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
